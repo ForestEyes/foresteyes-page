@@ -87,6 +87,17 @@ export default function Footer() {
             © {new Date().getFullYear()} ForestEyes.{" "}
             {t("Todos os direitos reservados.", "All rights reserved.")}
           </p>
+          <p className="mt-1">
+            {t("Desenvolvido por", "Developed by")}{" "}
+            <a
+              href="https://gabrielcampanile.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-accent-foreground transition-colors"
+            >
+              Gabriel Campanile
+            </a>
+          </p>
         </div>
       </div>
     </footer>
