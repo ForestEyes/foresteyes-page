@@ -29,8 +29,8 @@ export default function HowItWorksSection() {
       steps: [
         t("Construção de Tarefas", "Task Construction"),
         t(
-          "Construção da Campanha na Plataforma de Ciência Cidadã",
-          "Campaign Construction on the Citizen Science Platform",
+          "Construção da Campanha",
+          "Campaign Construction",
         ),
         t("Respostas dos Voluntários", "Volunteer Responses"),
       ],
@@ -49,13 +49,29 @@ export default function HowItWorksSection() {
         t("Classificação das Tarefas", "Task Classification"),
         t("Análises", "Analytics"),
         t(
-          "Seleção de Amostras para o Módulo de Aprendizado de Máquina",
-          "Sample Selection for the Machine Learning Module",
+          "Seleção de Amostras",
+          "Sample Selection",
         ),
       ],
       output: t(
         "Saída: Amostras qualificadas para IA",
         "Output: Qualified samples for AI",
+      ),
+    },
+    {
+      icon: Brain,
+      title: t(
+        "Módulo de Aprendizado de Máquina",
+        "Machine Learning Module",
+      ),
+      steps: [
+        t("Treinamento do Modelo", "Model Training"),
+        t("Validação do Modelo", "Model Validation"),
+        t("Inferência e Aplicação", "Inference and Application"),
+      ],
+      output: t(
+        "Saída: Conjunto teste classificado",
+        "Output: Classified test set",
       ),
     },
   ];
@@ -68,8 +84,8 @@ export default function HowItWorksSection() {
         </h2>
         <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
           {t(
-            "O fluxo segue três módulos principais: pré-processamento das imagens, campanha de ciência cidadã e organização/seleção das respostas para alimentar o aprendizado de máquina.",
-            "The workflow follows three main modules: image preprocessing, citizen science campaign execution, and response organization/selection to feed machine learning.",
+            "O fluxo segue quatro módulos principais: pré-processamento das imagens, campanha de ciência cidadã, organização/seleção e aprendizado de máquina das respostas para alimentar o aprendizado de máquina.",
+            "The workflow follows four main modules: image preprocessing, citizen science campaign execution, response organization/selection, and machine learning to feed machine learning.",
           )}
         </p>
 
@@ -94,7 +110,7 @@ export default function HowItWorksSection() {
             </div>
           </div>
 
-          <div className="space-y-3 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-6">
+          <div className="space-y-3 lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-6">
             {modules.map((module, i) => (
               <div key={`module-flow-${i}`}>
                 <div className="relative bg-card border border-border rounded-xl p-5 h-full">
@@ -143,7 +159,7 @@ export default function HowItWorksSection() {
             ))}
           </div>
 
-          <div className="bg-primary/5 border border-primary/20 rounded-xl p-4 md:p-5">
+          {/* <div className="bg-primary/5 border border-primary/20 rounded-xl p-4 md:p-5">
             <div className="flex items-start gap-3">
               <Brain className="h-5 w-5 text-primary mt-0.5" />
               <p className="text-xs md:text-sm text-foreground">
@@ -153,7 +169,7 @@ export default function HowItWorksSection() {
                 )}
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
