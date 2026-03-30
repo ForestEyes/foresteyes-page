@@ -13,7 +13,7 @@ export default function ContactSection() {
         <p className="text-muted-foreground mb-8">
           {t(
             "Para mais informações sobre o projeto ForestEyes, entre em contato com a coordenação.",
-            "For more information about the ForestEyes project, contact the coordination team."
+            "For more information about the ForestEyes project, contact the coordination team.",
           )}
         </p>
 
@@ -24,13 +24,11 @@ export default function ContactSection() {
           <div className="space-y-3 text-muted-foreground">
             <div className="flex items-center gap-3">
               <Building className="h-5 w-5 text-primary flex-shrink-0" />
-              <span>ICT – Universidade Federal de São Paulo (UNIFESP)</span>
+              <span>ICT/UNIFESP – Instituto de Ciência e Tecnologia/Universidade Federal de São Paulo</span>
             </div>
             <div className="flex items-center gap-3">
               <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-              <a href="mailto:alvaro.fazenda@unifesp.br" className="text-primary hover:text-secondary transition-colors">
-                alvaro.fazenda@unifesp.br
-              </a>
+              <span>alvaro.fazenda@unifesp.br</span>
             </div>
           </div>
         </div>
